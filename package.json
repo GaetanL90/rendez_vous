@@ -1,0 +1,25 @@
+{
+  "name": "rendez-vous",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaetanL90/rendez_vous.git"
+  },
+  "keywords": [
+    "rendez"
+  ],
+  "author": "Gaetan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaetanL90/rendez_vous/issues"
+  },
+  "homepage": "https://github.com/GaetanL90/rendez_vous#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

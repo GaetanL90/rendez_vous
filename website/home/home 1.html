@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Home</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<hr>
+<script>
+/*//<!--variables-->
+var age ;
+let name = "Hitimana";
+const email = "gyitgaetan90@gmail.com";
+//<!--Operators-->
+var sum = age + 5;
+//<!--How to display content-->
+console.log(age);
+
+var fname = prompt("firstname","Enter your first name");
+age = prompt("Age","Enter your age");
+
+var message = (age<18)? "You are still young<br/>":"Old enough<br/>"
+document.write(fname+" is "+age+" years old!<br/>");
+document.write(message);
+var das = new Date();
+var year = das.getFullYear();
+var Day = das.getDay();
+var hour = das.getHours();
+document.write(hour+"<br/>");
+var d;
+for(d=1; d <= 10; d++){
+document.write(d+" Good morning Mr. "+fname+"<br/>");
+}
+alert(name)
+confirm(name)
+prompt(email)*/
+
+//Functions
+/*function addition(a,b,c){
+var sum = a+b+c;
+return sum;
+}
+document.write(addition(3,5,7))
+
+Events:
+1.onClick
+2.onload
+3.onMouseover
+4.onFocus
+5.onkeyupp
+6.onchange
+7.onmouseout
+8.onblur
+*/
+function myKeyUpFunction(){
+    var input = document.getElementById("Firstname").value;
+    document.getElementById("Test").innerHTML = input;
+
+}
+function myMouseOverFunction(){
+    var input = document.getElementById("Firstname").value;
+    document.getElementById("Test").innerHTML = input;
+
+}
+
+products[0]="Mango";
+products[1]="Apple";
+products[2]="Pinaple";
+products[3]="Orange";
+products[4]="grapes";
+products[5]="Banana";
+
+for(var x=0;x<products.length;)
+
+let productDetails = [
+    {id:1,productName:"Mngo",productPrice:"2300",productSupplier:"Gaetan"},
+    {id:2,productName:"Mngo",productPrice:"2300",productSupplier:"Gaetan"},
+    {id:3,productName:"Mngo",productPrice:"2300",productSupplier:"Gaetan"},
+    {id:4,productName:"Mngo",productPrice:"2300",productSupplier:"Gaetan"},
+    {id:5,productName:"Mngo",productPrice:"2300",productSupplier:"Gaetan"},
+    {id:6,productName:"Mngo",productPrice:"2300",productSupplier:"Gaetan"},
+    {id:7,productName:"Mngo",productPrice:"2300",productSupplier:"Gaetan"},
+    {id:8,productName:"Mngo",productPrice:"2300",productSupplier:"Gaetan"}
+    
+]
+
+</script>
+<form action="">
+    Enter your Fname:
+    <input type="text" id="Firstname"
+    onkeyup="myKeyUpFunction()"><br/><br/>
+    Enter your email:
+    <input type="text" id="Email"/>
+    <br/>
+    <p>
+        My First name is:
+        <span style="color: green;font-size: 40px;"id="Test"></span>
+    </p>
+    <h2 id="demo"
+    onmouseover="myMouseOverFunction()">Test Mouse over me</h2>
+</form>
+</body>
+
+
+
+<!--makaroo.com can be used for frontend test as database-->
+</html>

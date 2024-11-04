@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Patient Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#requestAppointment">Request Appointment</a></li>
+            <li><a href="#rescheduleAppointment">Reschedule Appointment</a></li>
+            <li><a href="#appointmentHistory">Appointment History</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="requestAppointment">
+            <h2>Request Appointment</h2>
+            <form id="requestForm">
+                <label for="doctor">Doctor:</label>
+                <input type="text" id="doctor" name="doctor" required><br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <button type="button" onclick="submitRequest()">Submit Request</button>
+            </form>
+        </section>
+        
+        <section id="rescheduleAppointment">
+            <h2>Reschedule Appointment</h2>
+            <form id="rescheduleForm">
+                <label for="appointmentId">Appointment ID:</label>
+                <input type="text" id="appointmentId" name="appointmentId" required><br><br>
+                <label for="newDate">New Date:</label>
+                <input type="date" id="newDate" name="newDate" required><br><br>
+                <button type="button" onclick="submitReschedule()">Submit Reschedule</button>
+            </form>
+        </section>
+        
+        <section id="appointmentHistory">
+            <h2>Appointment History</h2>
+            <ul id="historyList">
+                <!-- Appointment history will be displayed here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Receive notifications for updates on pending appointments</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>

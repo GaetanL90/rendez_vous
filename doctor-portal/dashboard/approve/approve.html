@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Dashboard - Approve Appointments</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td colspan="4">
+                <h1>Welcome to Your Doctor's Dashboard</h1>
+            </td>
+        </tr>
+        <tr class="nav-bar">
+            <td style="padding-left: 50px;text-align:left;padding-top: 10px;">
+                <a href="../profile/profile.html" id="profileLink" style="color: rgb(255, 251, 0);"><u>| Profile Information |</u></a>
+            </td>
+            <td style="padding-left: 50px;text-align:left;padding-top: 10px;">
+                <a href="../history/history.html" id="appointmentsLink" style="color: burlywood;"><u>| Appointments History |</u></a>
+            </td>
+            <td style="padding-left: 50px;text-align:left;padding-top: 10px;">
+                <a href="../approve/approve.html" id="approveLink" style="color: rgb(255, 251, 0);"><u>| Approve Appointments |</u></a>
+            </td>
+            <td style="padding-left: 50px;text-align:left;padding-top: 10px;">
+                <a href="../reschedule/reschedule.html" id="rescheduleLink" style="color: burlywood;"><u>| Reschedule Appointments |</u></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: right;">
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" id="content"></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+
+            </td>
+            <td>
+                <div class="sort-section">
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy">
+                        <option value="id">ID</option>
+                        <option value="patient">Patient</option>
+                        <option value="status">Status</option>
+                        <option value="appliedDate">Applied Date</option>
+                        <option value="appointmentDate">Appointment Date</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="approve.js"></script>
+</body>
+</html>

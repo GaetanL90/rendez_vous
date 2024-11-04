@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td colspan="4">
+                <h1>Welcome to Your Doctor's Dashboard</h1>
+            </td>
+        </tr>
+        <tr class="nav-bar">
+            <td style="padding-left: 50px;text-align:left;padding-top: 10px;">
+                <a id="profileLink" href="#profile" style="color: rgb(255, 251, 0);"><u>| Profile Information |</u></a>
+            </td>
+            <td style="padding-left: 50px;text-align:left;padding-top: 10px;">
+                <a id="appointmentsLink" href="#appointments" style="color: burlywood;"><u>|   Appointments History |</u></a>
+            </td>
+            <td style="padding-left: 50px;text-align:left;padding-top: 10px;">
+                <a id="approveLink" href="#approve" style="color: rgb(255, 251, 0);"><u>| Approve Appointments |</u></a>
+            </td>
+            <td style="padding-left: 50px;text-align:left;padding-top: 10px;">
+                <a id="rescheduleLink" href="#reschedule" style="color: burlywood;"><u>|   Reschedule Appointments |</u></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" id="content">
+                <div id="appointmentsTableContainer"></div>
+                
+            </td>
+        </tr>
+    </table>
+    <script src="dashboard.js"></script>
+</body>
+</html>

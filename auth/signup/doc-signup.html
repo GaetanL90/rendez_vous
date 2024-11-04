@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rendez Vous - Sign Up</title>
+<link rel="stylesheet" href="signup.css">
+<script src="doc-signup.js"></script>
+
+</head>
+<body>
+  <table border="0" cellpadding="0" cellspacing="0" >
+       
+    <tr 
+    style=" 
+    background-image: url('../../assets/hospital.webp');
+    background-size: cover;
+    height: 200px;
+    
+   ">
+    <td colspan="5" style="font-size: 100px;color:#ffc10717">
+        <marquee direction="left" scrollamount="7"> 
+            Welcome to our site!
+        </marquee>
+        </td><td>  </td>
+    </tr>
+    
+    
+    
+    <!-- Sign Up form section -->
+    <tr>
+      <td></td>
+      <td colspan="4" >
+        <h2 style="text-align: left;padding-left:10%">Create new account: </h2>
+        <hr style="width: 80%;text-align:left">
+       
+      </td>
+      
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4" class="center">
+        <form class="signup-form" action="get_sectors.php" method="post"> 
+
+            <table border="0" cellpadding="0" cellspacing="0" >
+
+                <tr>
+                    <td>
+                        <input type="text" name="firstname" placeholder="First Name" required>
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" placeholder="Last Name" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </td>
+                    <td>
+                        <input type="phone" name="phone" placeholder="PHONE NUMBER" required>
+                    </td>
+                </tr>
+                    
+                    
+                
+                <tr>
+                    <td id="district-select">
+                        <select id="district" name="district" required>
+                            <option value="" selected disabled> Select district</option>
+                            <option value="Kicukiro">Kicukiro</option>
+                            <option value="Nyarugenge">Nyarugenge</option>
+                            <option value="Gasabo">Gasabo</option>
+                        </select>
+                    </td>
+                    <td id="sector-select">
+                        <select id="sector" name="sector" required>
+                            <option value="" selected disabled> Select sector</option>
+                            <option value="">Niboye</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="text" name="specialization" placeholder="Specialization" required>
+                    </td>
+                    <td>
+                        <input type="text" name="role" placeholder="doctor" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </td>
+                    
+                    <td>
+                        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Sign Up</button>
+                    </td>
+                    <td>
+                        <button type="submit"><a class="decor" href="pat-signup.html" style="font-size: 15px;color: black;">continue as patient</a></button>
+                    </td>
+                </tr>
+                
+                
+
+            </table>
+
+        </form>
+      </td>
+      <td></td>
+    </tr>
+    <tr style="background-color:#3d72a7">
+      <td></td>
+      <td class="center" colspan = "4">Already have an account? <a href="../../auth/login/login.html"> login</a> here.</td>
+      <td></td>
+      </tr>
+
+    <!-- Footer section -->
+    <!-- Footer content here... -->
+    
+</table>
+
+
+</body>
+</html>
