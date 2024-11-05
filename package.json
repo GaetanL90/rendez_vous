@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm start"
+    "test": "npm start",
+    "start": "concurrently \"node website/server.js\" \"node patient-portal/server.js\" \"node doctor-portal/server.js\" \"node admin-portal/server.js\" \"node main-server.js\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,10 @@
   },
   "homepage": "https://github.com/GaetanL90/rendez_vous#readme",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
   }
 }

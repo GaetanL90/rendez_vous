@@ -1,0 +1,26 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "website package for rendez_vous project.",
+  "main": "server.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaetanL90/rendez_vous.git"
+  },
+  "keywords": [
+    "running"
+  ],
+  "author": "Gaetan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaetanL90/rendez_vous/issues"
+  },
+  "homepage": "https://github.com/GaetanL90/rendez_vous#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1"
+  }
+}

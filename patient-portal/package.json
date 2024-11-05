@@ -1,0 +1,23 @@
+{
+  "name": "patient-portal",
+  "version": "1.0.0",
+  "description": "Patient portal",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaetanL90/rendez_vous.git"
+  },
+  "keywords": [
+    "start"
+  ],
+  "author": "Gaetan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaetanL90/rendez_vous/issues"
+  },
+  "homepage": "https://github.com/GaetanL90/rendez_vous#readme"
+}
