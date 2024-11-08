@@ -30,14 +30,17 @@
                     <a class="nav-link" href="services/services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../auth/login/login.html">Log In | Sign Up</a>
+                    <a class="nav-link" href="/auth/login">Log In | Sign Up</a>
                 </li>
+                
+                
             </ul>
         </div>
     </nav>
 
     <main class="container my-4 flex-grow-1" id="content">
         <!-- Content will be loaded here -->
+         
     </main>
 
     <footer class=" text-white text-center py-3">
@@ -48,27 +51,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
     
-    <script>
-        $(document).ready(function() {
-            // Load home content by default
-            loadPage('home/home.html');
-
-            // Handle navigation link clicks
-            $('.nav-link').click(function(e) {
-                e.preventDefault(); // Prevent default anchor click behavior
-                var page = $(this).attr('href');
-                loadPage(page); // Load the page
-            });
-
-            // Function to load page content
-            function loadPage(page) {
-                $('#content').load(page); // Load content into the main section
-            }
-
-            // Set current year in footer
-            document.getElementById('currentYear').textContent = new Date().getFullYear();
-        });
-    </script>
+ 
 </body>
 </html>

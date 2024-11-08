@@ -21,8 +21,17 @@
   },
   "homepage": "https://github.com/GaetanL90/rendez_vous#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
-    "express": "^4.21.1"
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "http-proxy-middleware": "^3.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.0",
+    "mysql2": "^3.11.4",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"

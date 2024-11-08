@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Sign Up</h2>
+
+        <!-- Step 1: Role Selection -->
+        <div id="roleSelection">
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+                <option value="" disabled selected>Select a role</option>
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button type="button" id="continueBtn" disabled>Continue</button>
+        </div>
+
+        <!-- Step 2: Personal Information -->
+        <div id="personalInfo" style="display: none;">
+            <form id="signupForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="nationalId">National ID:</label>
+                <input type="text" id="nationalId" name="nationalId" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <button type="submit" id="submitBtn" disabled>Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Step 3: Role-specific Information -->
+        <div id="roleSpecificInfo" style="display: none;">
+            <div id="doctorFields" style="display: none;">
+                <label for="idCopy">Upload National ID Copy:</label>
+                <input type="file" id="idCopy" name="idCopy" accept="image/*" required>
+
+                <label for="legalDocs">Upload Legal Documents:</label>
+                <input type="file" id="legalDocs" name="legalDocs" accept="application/pdf,image/*" required>
+            </div>
+
+            <div id="patientFields" style="display: none;">
+                <label for="province">Province:</label>
+                <input type="text" id="province" name="province" required>
+
+                <label for="district">District:</label>
+                <input type="text" id="district" name="district" required>
+
+                <label for="sector">Sector:</label>
+                <input type="text" id="sector" name="sector" required>
+            </div>
+        </div>
+
+        <script src="signup.js"></script>
+    </div>
+</body>
+</html>
